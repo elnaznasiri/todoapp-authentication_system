@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> tODOmvc</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app" style="display:block">
+        <h1>todos</h1>
+
+        <div class="upbtn">
+            <input type="button" value="Sign in" id="btnSignin" class="btn-login btn-filter" onclick="view.showLoginPage()" />
+            <input type="button" value="Sign up" id="btnSignup" class="btn-login btn-filter" onclick="view.showRegisterPage()">
+            <span id="spnUserDisplayName" class="user">---</span>
+            <input type="button" value="Sign out" id="btnSignout" class="btn-filterud" style="display:none" onclick="view.logoff()" />
+            <button type="button" id="downloadButton" class="btn-filterud" onclick="view.download()">Download</button>
+            <button type="button" id="uploadButton" class="btn-filterud" onclick="view.upload()">Upload</button>
+        </div>
+
+        <section class="todomvc" id="todomvc">
+            <header class="header">
+                <input type="text" id='textbox' class="typebox" placeholder="what needs to be done?" autocomplete="off"/>
+                <button type="button" id='addbutton' class="btn-login btn-filter" onclick="view.add()">Add</button>
+            </header>
+    
+            <section class="main">
+                <div class="todo-list" id="list">
+                    <ul class="ul-element" id="ul-todo-list">
+    
+                    </ul>
+                </div>
+            </section>
+
+            <section class="footer">
+                    <button type="button" id="f0" class="btn-filter selected-filter" onclick="view.filter(0)">All</button>
+                    <button type="button" id="f1" class="btn-filter" onclick="view.filter(1)">Active</button>
+                    <button type="button" id="f2" class="btn-filter" onclick="view.filter(2)">Completed</button>
+                    <button type="button" id="deletebutton" class="btn-filter" onclick="view.deleteAll()">Delete All</button>
+            </section>
+
+            <footer class="underbox">
+                    <p>Double click to edit a todo</p>
+                    <p>Writen by</p>
+                    <p>Part of TodoMVC</p>
+            </footer>
+        </section>
+    </div>
+
+    <div id="id01" style="display:none">
+        <div>
+            <input type="text" class="userlogin" placeholder="Enter Username" id="modal-username" name="uname" required autocomplete="off" />
+        </div>
+        <div>
+            <input type="password" class="passlogin" placeholder="Enter Password" id="modal-password" name="pwd" />
+        </div>
+        <div>
+            <br></br>
+            <input type="button" value="Login" class="btn-in-login" onclick="view.login()" />
+            <input type="button" value="Cancel" class="cancelbtn" onclick="view.cancelLogin()" />
+        </div>
+    </div>  
+
+    <div id="signup-page" style="display:none">
+        <div>
+            <input type="text" placeholder="fisrtname" class="userlogin" id="fisrtnameSignup" />
+        </div>
+        <div>
+            <input type="text" placeholder="lastname" class="passlogin" id="lastnameSignup" />
+        </div>
+        <div>
+            <input type="text" placeholder="username" class="passlogin" id="usernameSignup" />
+        </div>
+        <div>
+            <input type="text" placeholder="password" class="passlogin" id="passwordSignup" />
+        </div>
+        <div>
+            <br></br>
+            <input type="button" value="submit" class="btn-in-login" onclick="view.register()" />
+            <input type="button" value="Cancel" class="cancelbtn" onclick="view.cancelRegister()" />
+        </div>
+    </div>
+    
+    <script src="http.js"></script>
+    <script src="database.js"></script>
+    <script src="connection.js"></script>
+    <script src="view.js"></script>
+    <script src="controler.js"></script>
+</body>
+</html>

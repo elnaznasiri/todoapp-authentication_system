@@ -1,0 +1,9 @@
+insert login(div) page
+insert login(div) and add username and password then click login and see notelist for her or him
+login(view)=>login(contoroler)=>authenticator(conection)=>http.post=>username/password + token + localstorage=>database download, database upload
+
+login with user and password in user.txt
+
+and insert sigh out 
+sighn out: insert firstname and lastname and username and password then sava in user.txt
+and use username and password in user.txt

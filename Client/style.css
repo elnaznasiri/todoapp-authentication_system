@@ -1,0 +1,264 @@
+html, body {
+    margin: 0px;
+    padding:0px;
+
+}
+
+h1 {
+    width: 100%;
+    font-size: 70px;
+    font-weight: 100;
+    text-align: center;
+    color: rgb(196, 30, 85);
+}
+
+.upbtn {
+    width: 500px;
+    margin: 10px auto;
+}
+
+.ul-element {
+    margin: 10px 0px;
+    padding: 0px 0px 0px 5px;
+}
+
+.ul-element>li>img {
+    float: right;
+}
+
+li {
+    padding-bottom: 15px;
+    list-style-position: inside;
+    border: 1px solid rgb(199, 196, 196);
+    padding: 5px;
+    margin: 5px -15px 0px;
+    border-radius: 4px;
+}
+
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.typebox {
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 5px 8px;
+    border-radius: 6px;
+    width: 500px;
+}
+
+.editbox {
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 5px 8px;
+}
+
+::placeholder {
+    color: rgb(190, 188, 188);
+    font-size: 17px;
+}
+
+.main {
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.footer {
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.todo-list {
+    margin: 2px;
+    width: 430px;
+}
+
+.todo-list div {
+    position: relative;
+    font-size: 19px;
+    border-bottom: 1px solid #ededed;
+    margin: 2px;
+    padding: 6px;
+}
+
+.todo-list img {
+    width: 15px;
+    margin-left: 5px;
+}
+
+.selected-filter {
+    background-color: green;
+}
+
+.btn-filter {
+    margin: 0px 1px;
+    color: black;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 25px;
+}
+
+.btn-filterud {
+    margin: 0px 1px;
+    color: black;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 25px;
+    float: right;
+}
+
+.btn-login {
+    height: 38px;
+    width: 70px;
+}
+
+.btn-add {
+    background-color: gray;
+    border-style: solid;
+    flex-grow: 0;
+    margin: 0 5px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.btn-delete {
+    background-color: gray;
+    border-style: solid;
+    flex-grow: 0;
+    margin: 0 5px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.underbox {
+    margin: 65px auto 0;
+    color: #bfbfbf;
+    font-size: 12px;
+    text-shadow: 10 12px 45 rgba(255, 255, 255, 0.329);
+    text-align: center;
+    width: 500px;
+}
+
+.userlogin {
+    width: 500px;
+   
+    margin:150px 0px 0px 550px; 
+    padding:12px 20px;
+
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.passlogin {
+    width: 500px;
+    margin: 15px 0px 0px 550px;
+    padding:12px 20px;
+
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.btn-in-login {
+    margin:0px 0px 0px 550px;
+    padding:12px 20px;
+    color: black;
+    background-color: #4CAF50;
+    cursor: pointer;
+    height: 40px;
+    width: 500px;
+}
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    width: auto;
+    padding:11px 20px 10px 20px;
+    margin:0px;
+    background-color: #f44336;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
